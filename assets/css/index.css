@@ -1,0 +1,51 @@
+:root {
+    --bg-main: #2e2e2e;
+    --bg-nav: #1e1e1e;
+    --font-main: 'Rotobo', sans-serif;
+    --font-title: 'Times New Roman', Times, serif
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-main);
+    color: white;
+}
+
+main {
+    background: var(--bg-main);
+}
+
+/* Nav styling */
+.nav-links {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+
+    height: 5rem;
+    gap: 2rem;
+    padding-right: 4rem;
+
+    background: var(--bg-nav);
+    list-style: none;
+}
+
+.nav-link {
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+}
+
+/* Main body styling */
+.title {
+    font-family: var(--font-title);
+}
+
+.download-redirect {
+    text-decoration: none;
+    outline: 2px solid black;
+    width: 3rem;
+}
