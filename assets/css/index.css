@@ -1,8 +1,10 @@
 :root {
     --bg-main: #2e2e2e;
     --bg-nav: #1e1e1e;
-    --font-main: 'Rotobo', sans-serif;
-    --font-title: 'Times New Roman', Times, serif
+    --font-main: 'Roboto', sans-serif;
+    --font-size-l: 4rem;
+    --font-size-m: 2rem;
+    --font-size-s: 1.5rem;
 }
 
 * {
@@ -12,17 +14,13 @@
     color: white;
 }
 
-main {
-    background: var(--bg-main);
-}
-
 /* Nav styling */
 .nav-links {
     display: flex;
     justify-content: right;
     align-items: center;
 
-    height: 5rem;
+    min-height: 10vh;
     gap: 2rem;
     padding-right: 4rem;
 
@@ -35,17 +33,80 @@ main {
     font-size: 1.5rem;
 }
 
-.nav-link:hover {
-    text-decoration: underline;
+.hover-underline {
+  display: inline-block;
+  position: relative;
+  color: white;
+}
+
+.hover-underline::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
 
 /* Main body styling */
+.home {
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    background-image: url('../images/home.jpg');
+}
+
 .title {
-    font-family: var(--font-title);
+    font-size: var(--font-size-l);
+}
+
+.medium-text {
+    font-size: var(--font-size-m);
+}
+
+.welcome-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    margin-bottom: 2rem;
 }
 
 .download-redirect {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     text-decoration: none;
-    outline: 2px solid black;
-    width: 3rem;
+    outline: 2px solid white;
+    font-size: var(--font-size-s);
+    border-radius: 2rem;
+    padding: 1rem 2rem;
+    background: rgba(0, 0, 0, 0.25);
+    
+    transition: 0.3s;
+}
+
+.download-redirect:hover {
+    background: white;
+    color: var(--bg-main);
+}
+
+/* Footer styling */
+footer {
+    min-height: 10vh;
+    background: var(--bg-nav);
 }
