@@ -1,10 +1,10 @@
 :root {
-    --bg-main: #2e2e2e;
-    --bg-nav: #1e1e1e;
+    --bg-main: #131313;
+    --bg-nav: #0c0c0c;
     --font-main: 'Roboto', sans-serif;
     --font-size-l: 4rem;
     --font-size-m: 2rem;
-    --font-size-s: 1.5rem;
+    --font-size-s: 1.75rem;
 }
 
 * {
@@ -12,10 +12,16 @@
     padding: 0;
     font-family: var(--font-main);
     color: white;
+    scroll-behavior: smooth;
 }
 
 /* Nav styling */
-.nav-links {
+nav {
+    position: sticky;
+    top: 0;
+}
+
+.nav__links {
     display: flex;
     justify-content: right;
     align-items: center;
@@ -28,61 +34,56 @@
     list-style: none;
 }
 
+.nav-opaque {
+    background: var(--bg-nav);
+}
+
+.nav-transparent {
+    background: transparent;
+}
+
 .nav-link {
     text-decoration: none;
     font-size: 1.5rem;
 }
 
-.hover-underline {
-  display: inline-block;
-  position: relative;
-  color: white;
-}
-
-.hover-underline::after {
-  content: '';
-  position: absolute;
-  width: 100%;
-  transform: scaleX(0);
-  height: 2px;
-  bottom: 0;
-  left: 0;
-  background-color: white;
-  transform-origin: bottom right;
-  transition: transform 0.25s ease-out;
-}
-
-.hover-underline:hover::after {
-  transform: scaleX(1);
-  transform-origin: bottom left;
+.nav-link:hover {
+    text-decoration: underline;
 }
 
 /* Main body styling */
+body {
+    background-image: url('../images/home.jpg');
+}
+
 .home {
-    min-height: 80vh;
+    min-height: 90vh;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-
-    background-image: url('../images/home.jpg');
 }
 
-.title {
-    font-size: var(--font-size-l);
-}
 
 .medium-text {
     font-size: var(--font-size-m);
 }
 
-.welcome-text {
+.small-text {
+    font-size: var(--font-size-s);
+}
+
+.welcome {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-
+    
     margin-bottom: 2rem;
+}
+
+.title {
+    font-size: var(--font-size-l);
 }
 
 .download-redirect {
@@ -105,8 +106,35 @@
     color: var(--bg-main);
 }
 
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    background: var(--bg-main);
+}
+
+.about__title {
+    margin-top: 2rem;
+}
+
+.about__text {
+    width: 60%;
+    margin: 2rem;
+}
+
 /* Footer styling */
 footer {
     min-height: 10vh;
     background: var(--bg-nav);
+}
+
+.footer__list {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    list-style: none;
+    padding: 2rem;
 }

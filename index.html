@@ -7,37 +7,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="assets/index.js" defer></script>
     <title>Svart</title>
 </head>
 
 <body>
     <nav>
-        <ul class="nav-links">
-            <li><a class="nav-link hover-underline" href="download.html"><b>Download</b></a></li>
-            <li><a class="nav-link hover-underline" href="">History</a></li>
+        <ul class="nav__links">
+            <li><a class="nav-link" href="download.html"><b>Download</b></a></li>
+            <li><a class="nav-link" href="">History</a></li>
             <li><a href="https://github.com/crippa1337/svart"><i class="fa fa-github" style="font-size:36px"></i></a></li>
         </ul>
     </nav>
 
     <main>
         <section class="home">
-            <div class="welcome-text">
+            <div class="welcome">
                 <h1 class="title">SVART</h1>
-                <p class="medium-text">An open source & superhuman chess engine.</p>
+                <p class="medium-text">An open source & superhuman chess engine</p>
             </div>
             <a href="download.html" class="download-redirect">Download Svart 4</a>
         </section>
 
         <section class="about">
-            <h1 class="title">About</h1>
+            <h1 class="about__title title">About</h1>
+            <p class="about__text small-text">
+                Svart is a chess engine written in Rust. It began in February 2023 as a fun project but quickly grew into a competetive engine.
+                According to the <a href="https://ccrl.chessdom.com/ccrl/4040/">CCRL</a>, Svart is one of the top 100 strongest chess engines available with an elo rating above 3000.
+            </p>
         </section>
     </main>
 
     <footer>
-
+        <ul class="footer__list">
+            <li>
+                <p><b>Contact:</b> crippa#9590</p>
+            </li>
+            <li>
+                <p><b>License:</b> Svart and this page is licensed under the <a href="https://en.wikipedia.org/wiki/MIT_License">MIT license.</a></p>
+            </li>
+            <li><a href="#">Back to the top</a></li>
+        </ul>
     </footer>
-
-
 </body>
 
 </html>
