@@ -14,3 +14,56 @@
     color: white;
     scroll-behavior: smooth;
 }
+
+/* Nav */
+nav {
+    position: sticky;
+    top: 0;
+}
+
+.nav__links {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+
+    min-height: 10vh;
+    gap: 2rem;
+    padding-right: 4rem;
+
+    background: var(--bg-nav);
+    list-style: none;
+
+    transition: 0.15s ease-out;
+}
+
+.nav-opaque {
+    background: var(--bg-nav);
+}
+
+.nav-transparent {
+    background: transparent;
+}
+
+.nav-link {
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    min-height: 10vh;
+    background: var(--bg-nav);
+}
+
+.footer__list {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    list-style: none;
+    padding: 2rem;
+}
