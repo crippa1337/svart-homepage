@@ -32,6 +32,8 @@ nav {
 
     background: var(--bg-nav);
     list-style: none;
+
+    transition: 0.25s linear;
 }
 
 .nav-opaque {
@@ -64,6 +66,9 @@ body {
     flex-direction: column;
 }
 
+.title-text {
+    font-size: var(--font-size-l);
+}
 
 .medium-text {
     font-size: var(--font-size-m);
@@ -80,10 +85,6 @@ body {
     flex-direction: column;
     
     margin-bottom: 2rem;
-}
-
-.title {
-    font-size: var(--font-size-l);
 }
 
 .download-redirect {
