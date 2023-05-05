@@ -11,18 +11,6 @@ body {
     flex-direction: column;
 }
 
-.title-text {
-    font-size: var(--font-size-l);
-}
-
-.medium-text {
-    font-size: var(--font-size-m);
-}
-
-.small-text {
-    font-size: var(--font-size-s);
-}
-
 .welcome {
     display: flex;
     justify-content: center;

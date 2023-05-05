@@ -15,6 +15,18 @@
     scroll-behavior: smooth;
 }
 
+.title-text {
+    font-size: var(--font-size-l);
+}
+
+.medium-text {
+    font-size: var(--font-size-m);
+}
+
+.small-text {
+    font-size: var(--font-size-s);
+}
+
 /* Nav */
 nav {
     position: sticky;
