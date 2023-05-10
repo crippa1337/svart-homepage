@@ -1,4 +1,4 @@
-/* Main body styling */
+/* Hero */
 body {
     background-image: url('../images/home.jpg');
 }
@@ -39,6 +39,8 @@ body {
     background: white;
     color: var(--bg-main);
 }
+
+/* About */
 
 .about {
     display: flex;

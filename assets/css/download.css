@@ -17,11 +17,16 @@ main {
     place-items: center;
 }
 
+.download__title {
+    margin-top: 2rem;
+}
+
 .download__list {
     display: flex;
     flex-direction: column;
     list-style: none;
-    gap: 5rem;
+    gap: 3rem;
+    margin: 2rem;
 }
 
 .download__box {
