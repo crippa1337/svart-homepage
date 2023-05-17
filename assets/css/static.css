@@ -1,6 +1,6 @@
 :root {
-    --bg-main: #131313;
-    --bg-nav: rgb(12, 12, 12);
+    --bg-main: rgb(20, 20, 20);
+    --bg-nav: rgb(8, 8, 8);
     --font-main: 'Roboto', sans-serif;
     --font-size-l: 4rem;
     --font-size-m: 2rem;
@@ -15,6 +15,10 @@
     scroll-behavior: smooth;
 }
 
+body {
+    line-height: 1.5rem;
+}
+
 .title-text {
     font-size: var(--font-size-l);
 }
@@ -23,8 +27,13 @@
     font-size: var(--font-size-m);
 }
 
+.title-text, .medium-text {
+    line-height: 3rem;
+}
+
 .small-text {
     font-size: var(--font-size-s);
+    line-height: 3rem;
 }
 
 /* Nav */
@@ -40,7 +49,7 @@ nav {
 
     min-height: 10vh;
     gap: 2rem;
-    padding-right: 4rem;
+    padding-inline: 20%;
 
     background: var(--bg-nav);
     list-style: none;
@@ -48,12 +57,14 @@ nav {
     transition: 0.15s ease-out;
 }
 
-.nav-opaque {
-    background: var(--bg-nav);
-}
 
 .nav-transparent {
     background: transparent;
+}
+
+.nav-opaque {
+    backdrop-filter: blur(0.75rem);
+    background: rgba(43, 43, 43, 0.25);
 }
 
 .nav-link {
