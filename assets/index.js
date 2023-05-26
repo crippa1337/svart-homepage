@@ -1,4 +1,4 @@
-// Navbar transparency fade effect
+// Navbar transparency fade effect for the homepage
 
 // Fetch the object with a query selector
 // Query selectors return the first object matching the query
