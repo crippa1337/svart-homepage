@@ -1,5 +1,6 @@
 :root {
     --bg-main: rgb(20, 20, 20);
+    --bg-content: rgb(29, 29, 29);
     --bg-nav: rgb(8, 8, 8);
     --font-main: 'Roboto', sans-serif;
     --font-size-l: 4rem;
