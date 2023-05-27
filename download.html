@@ -2,43 +2,63 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/static.css">
-    <link rel="stylesheet" href="assets/css/download.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/static.css" />
+    <link rel="stylesheet" href="assets/css/download.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <title>Svart: Download</title>
 </head>
 
 <body>
     <nav>
         <ul class="nav__links">
-            <li><a class="nav-link" href="download.html"><b>Download</b></a></li>
-            <li><a class="nav-link" href="history.html">History</a></li>
-            <li><a href="https://github.com/crippa1337/svart"><i class="fa fa-github" style="font-size:36px"></i></a></li>
-            <li><a href="index.html"><i class="fa fa-home" style="font-size:36px;color:white"></i></a></li>
+            <li><a class="nav-link colored-link" href="download.html">Download</a></li>
+            <li><a class="nav-link colored-link" href="history.html">History</a></li>
+            <li><a href="https://github.com/crippa1337/svart"><i class="fa fa-github" style="font-size: 36px"></i></a></li>
+            <li><a href="index.html"><i class="fa fa-home" style="font-size: 36px; color: white"></i></a></li>
         </ul>
     </nav>
 
     <main>
         <section class="download">
             <h1 class="title-text download__title">Download</h1>
-            <p class="medium-text">V1 V2 V3</p>
-
             <div class="figures">
                 <figure>
-                    <img src="assets/images/black_pawn.jpg" alt="Black Chess Pawn">
+                    <img src="assets/images/black_pawn.jpg" alt="Black Chess Pawn" />
                     <figcaption>V1</figcaption>
                 </figure>
                 <figure>
-                    <img src="assets/images/black_knight.jpg" alt="Black Chess Knight">
+                    <img src="assets/images/black_knight.jpg" alt="Black Chess Knight" />
                     <figcaption>V2</figcaption>
                 </figure>
                 <figure>
-                    <img src="assets/images/black_king.jpg" alt="Black Chess King">
+                    <img src="assets/images/black_king.jpg" alt="Black Chess King" />
                     <figcaption>V3</figcaption>
                 </figure>
+            </div>
+
+            <p class="medium-text">
+                Svart's release scheme follows the <a class="colored-link" href="https://en.wikipedia.org/wiki/X86-64#Microarchitecture_levels">microarchitecture levels</a>.
+            </p>
+
+            <div class="versions">
+                <div>
+                    <p class="medium-text">v1</p>
+                    <p>The slowest but compatible with almost anything.</p>
+                </div>
+                <div>
+                    <p class="medium-text">v2</p>
+                    <p>
+                        Less fast but is compatible with CPUs
+                        pre-Haswell/Excavator.
+                    </p>
+                </div>
+                <div>
+                    <p class="medium-text">v3</p>
+                    <p>The fastest and recommended on modern systems.</p>
+                </div>
             </div>
         </section>
     </main>
@@ -49,9 +69,9 @@
                 <p><b>Contact:</b> crippa#9590</p>
             </li>
             <li>
-                <p><b>License:</b> Svart and this page is licensed under the <a href="https://en.wikipedia.org/wiki/MIT_License">MIT license.</a></p>
+                <p><b>License:</b> Svart and this page is licensed under the <a class="colored-link" href="https://en.wikipedia.org/wiki/MIT_License">MIT license.</a></p>
             </li>
-            <li><a href="#">Back to the top</a></li>
+            <li><a class="colored-link" href="#">Back to the top</a></li>
         </ul>
     </footer>
 </body>

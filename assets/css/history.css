@@ -1,44 +1,99 @@
 main {
-    min-height: 90vh;
     background: var(--bg-main);
-}
 
-.tree {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas: 
-        "line-right right"
-        "left line-left"
-    ;
+    place-items: center;
 }
 
-.right,
+.timeline {
+    min-height: 100vh;
+    background: var(--bg-content);
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 4rem;
+
+    margin-inline: 2rem;
+    padding: 2rem;
+    max-width: 1024px;
+    background: var(--bg-content);
+    box-shadow: 25px 0 20px -20px rgba(0, 0, 0, 0.45), -25px 0 20px -20px rgba(0, 0, 0, 0.45);
+}
+
+.timeline__container {
+    width: 60vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.timeline__container > * {
+    min-height: 28rem;
+}
+
+.timeline__unit {
+    display: flex;
+    flex-direction: column;
+}
+
+.unit__title {
+    min-height: 10%;
+    text-align: center;
+    text-decoration: none;
+}
+
+.unit__content {
+    min-height: 90%;
+    padding: 1.5rem;
+}
+
+.unit__content,
+.unit__date {
+    font-size: 1.25rem;
+}
+
+.unit__date {
+    padding: 1.25rem;
+}
+
+.left .unit__date {
+    text-align: right;
+}
+
+.unit__divider {
+    width: 100%;
+    min-height: 2px;
+    background: var(--clr-timeline);
+    position: relative;
+}
+
 .left {
-    width: 10rem;
-    min-height: 10rem;
+    position: relative;
+    border-right: 2px solid var(--clr-timeline);
 }
 
 .right {
-    grid-area: right;
+    position: relative;
+    border-left: 2px solid var(--clr-timeline);
 }
 
-.left {
-    grid-area: left;
+/* Using a pseudo element to create a circle */
+.unit__divider::after {
+    content: "";
+    width: 1.2rem;
+    height: 1.2rem;
+    background: var(--clr-timeline);
+    border-radius: 50%;
+    position: absolute;
 }
 
-.line-right,
-.line-left {
-    background: white;
-    min-height: 10rem;
-    width: 10px;
+/* Adjusting the circle so it fits better */
+.left .unit__divider::after {
+    right: -0.75rem;
+    bottom: -0.5rem;
 }
 
-.line-right {
-    grid-area: line-right;
-}
-
-.line-left {
-    grid-area: line-left;
-    left: 0;
+.right .unit__divider::after {
+    left: -0.75rem;
+    bottom: -0.5rem;
 }

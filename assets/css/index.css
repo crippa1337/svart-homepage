@@ -1,6 +1,10 @@
 /* Hero */
 body {
     background-image: url('../images/home.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .home {
@@ -43,12 +47,22 @@ body {
 /* About */
 
 .about {
+    display: grid;
+    place-items: center;
+    background: var(--bg-main);
+}
+
+.about__divider {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 
-    background: var(--bg-main);
+    margin-inline: 2rem;
+    padding: 2rem;
+    max-width: 1024px;
+    background: var(--bg-content);
+    box-shadow: 25px 0 20px -20px rgba(0, 0, 0, 0.45), -25px 0 20px -20px rgba(0, 0, 0, 0.45);
 }
 
 .about__title {
@@ -56,6 +70,5 @@ body {
 }
 
 .about__text {
-    width: 60%;
     margin: 2rem;
 }
