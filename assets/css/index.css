@@ -86,4 +86,8 @@ body {
         padding: 0;
         box-shadow: none;
     }
+
+    .title-text {
+        margin-bottom: 1rem;
+    }
 }

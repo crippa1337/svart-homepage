@@ -58,7 +58,7 @@ figure > figcaption {
 }
 
 figure > img {
-    height: 100%;
+    min-height: 100%;
     width: 20rem;
 
     object-fit: cover;
@@ -81,6 +81,10 @@ figure:hover img {
     gap: 2rem;
 
     max-width: 1024px;
+}
+
+.medium-text {
+    text-align: center;
 }
 
 @media (max-width: 768px) {

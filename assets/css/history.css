@@ -22,7 +22,7 @@ main {
 }
 
 .timeline__container {
-    width: 40vw;
+    width: clamp(20rem, 100%, 1024px);
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
@@ -96,4 +96,36 @@ main {
 .right .unit__divider::after {
     left: -0.75rem;
     bottom: -0.5rem;
+}
+
+.unit__content > img {
+    margin-top: 2rem;
+    object-fit: contain;
+    max-height: 12rem;
+    width: 100%;
+}
+
+/* Responsivity */
+@media screen and (max-width: 768px) {
+    .timeline {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+
+    h1 {
+        margin-top: 2rem;
+    }
+
+    .unit__date {
+        padding-top: 2rem;
+    }
+
+    .timeline__container {
+        width: 90%;
+    }
+
+    .unit__content {
+        font-size: 0.9rem;
+    }
 }
