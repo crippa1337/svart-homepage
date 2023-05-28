@@ -2,23 +2,37 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="assets/css/static.css" />
-    <link rel="stylesheet" href="assets/css/download.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/static.css">
+    <link rel="stylesheet" href="assets/css/download.css">
+    <link rel="stylesheet" href="assets/css/mobile.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="assets/scripts/static.js" defer></script>
+    <script src="assets/scripts/mobile.js" defer></script>
     <title>Svart: Download</title>
 </head>
 
 <body>
-    <nav>
+    <nav class="desktop">
         <ul class="nav__links">
             <li><a class="nav-link colored-link" href="download.html">Download</a></li>
             <li><a class="nav-link colored-link" href="history.html">History</a></li>
-            <li><a href="https://github.com/crippa1337/svart"><i class="fa fa-github" style="font-size: 36px"></i></a></li>
-            <li><a href="index.html"><i class="fa fa-home" style="font-size: 36px; color: white"></i></a></li>
+            <li><a href="https://github.com/crippa1337/svart"><i class="fa fa-github" style="font-size:36px"></i></a></li>
+            <li><a href="index.html"><i class="fa fa-home" style="font-size:36px;color:white"></i></a></li>
+        </ul>
+    </nav>
+    <nav class="mobile small-text">
+        <div class="mobile__navbar">
+            <p>Svart</p>
+            <div class="burger noselect">☰</div>
+        </div>
+        <ul class="mobile__links small-text">
+            <a href="index.html" class="mobile__link">Home</a>
+            <a href="https://github.com/crippa1337/svart">GitHub</a>
+            <a href="download.html" class="mobile__link">Download</a>
+            <a href="history.html" class="mobile__link">History</a>
         </ul>
     </nav>
 
@@ -46,18 +60,15 @@
 
             <div class="versions">
                 <div>
-                    <p class="medium-text">v1</p>
+                    <p class="medium-text">V1</p>
                     <p>The slowest but compatible with almost anything.</p>
                 </div>
                 <div>
-                    <p class="medium-text">v2</p>
-                    <p>
-                        Less fast but is compatible with CPUs
-                        pre-Haswell/Excavator.
-                    </p>
+                    <p class="medium-text">V2</p>
+                    <p>Less fast but is compatible with CPUs pre-Haswell/Excavator.</p>
                 </div>
                 <div>
-                    <p class="medium-text">v3</p>
+                    <p class="medium-text">V3</p>
                     <p>The fastest and recommended on modern systems.</p>
                 </div>
             </div>

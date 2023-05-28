@@ -77,7 +77,6 @@ figure:hover img {
     width: 100%;
     display: flex;
     justify-content: space-around;
-    align-items: center;
     text-align: center;
     gap: 2rem;
 
@@ -90,8 +89,8 @@ figure:hover img {
         padding: 1rem;
     }
 
-    .figures {
-        gap: 2rem;
+    .versions {
+        flex-wrap: wrap;
     }
 
     figure {
@@ -101,5 +100,18 @@ figure:hover img {
     figure > img {
         max-width: 20rem;
         width: 100%;
+    }
+
+    figure > figcaption {
+        transform: translateX(0px);
+    }
+
+    figure:hover img {
+        transform: scale(1);
+        filter: blur(0);
+    }
+
+    .title-text {
+        margin-top: 2rem;
     }
 }

@@ -100,19 +100,25 @@ footer {
 
     list-style: none;
     padding: 2rem;
+    line-height: 2rem;
 }
 
-/* Responsivity */
 @media screen and (max-width: 768px) {
-    .nav__links {
-        justify-content: center;
-        padding-right: 0;
-        gap: 1rem;
+    .title-text,
+    .medium-text,
+    .small-text {
+        line-height: 2rem;
     }
-}
 
-@media screen and (max-width: 500px) {
-    .nav__links {
-        gap: 0.5rem;
+    .title-text {
+        font-size: clamp(2rem, 10vw, 4rem);
+    }
+
+    .medium-text {
+        font-size: clamp(1.5rem, 5vw, 2rem);
+    }
+
+    .small-text {
+        font-size: clamp(1rem, 3vw, 1.5rem);
     }
 }

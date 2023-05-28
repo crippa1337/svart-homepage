@@ -7,18 +7,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/static.css">
     <link rel="stylesheet" href="assets/css/history.css">
+    <link rel="stylesheet" href="assets/css/mobile.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="assets/scripts/static.js" defer></script>
+    <script src="assets/scripts/mobile.js" defer></script>
     <title>Svart: History</title>
 </head>
 
 <body>
-    <nav>
+    <nav class="desktop">
         <ul class="nav__links">
             <li><a class="nav-link colored-link" href="download.html">Download</a></li>
             <li><a class="nav-link colored-link" href="history.html">History</a></li>
             <li><a href="https://github.com/crippa1337/svart"><i class="fa fa-github" style="font-size:36px"></i></a></li>
             <li><a href="index.html"><i class="fa fa-home" style="font-size:36px;color:white"></i></a></li>
+        </ul>
+    </nav>
+    <nav class="mobile small-text">
+        <div class="mobile__navbar">
+            <p>Svart</p>
+            <div class="burger noselect">☰</div>
+        </div>
+        <ul class="mobile__links small-text">
+            <a href="index.html" class="mobile__link">Home</a>
+            <a href="https://github.com/crippa1337/svart">GitHub</a>
+            <a href="download.html" class="mobile__link">Download</a>
+            <a href="history.html" class="mobile__link">History</a>
         </ul>
     </nav>
 
