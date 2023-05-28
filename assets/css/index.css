@@ -8,11 +8,12 @@ body {
 }
 
 .home {
-    min-height: 90vh;
+    min-height: 95vh;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    box-shadow: inset 0 -3rem 3rem var(--bg-main);
 }
 
 .welcome {
