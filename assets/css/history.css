@@ -22,7 +22,7 @@ main {
 }
 
 .timeline__container {
-    width: 60vh;
+    width: 40vw;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
