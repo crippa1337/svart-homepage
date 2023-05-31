@@ -55,11 +55,86 @@ body {
     line-height: 2.5rem;
 }
 
+/* Cards */
+.main__card {
+    background: var(--bg-content);
+    width: 25%;
+    border-radius: 1rem;
+    outline: 1px white solid;
+}
+
+.card__title {
+    min-height: 6rem;
+    display: grid;
+    place-items: center;
+    border-bottom: 1px solid white;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.card__text {
+    margin: 2rem;
+    min-height: 20rem;
+}
+
+.card__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.redirect-button {
+    margin-bottom: 2rem;
+}
+
+.redirect-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: clamp(1rem, 5vw, 2rem);
+    width: fit-content;
+    text-decoration: none;
+    outline: 2px solid white;
+    border-radius: 2rem;
+    padding: 1rem 2rem;
+    background: rgba(0, 0, 0, 0.25);
+    
+    transition: 0.3s;
+}
+
+.redirect-button:hover {
+    background: white;
+    color: var(--bg-main);
+}
+
 /* Nav */
 nav {
     position: sticky;
     top: 0;
     z-index: 100;
+
+    min-height: 10vh;
+
+    padding-inline: 4rem;
+    background: var(--bg-nav);
+
+    transition: 0.15s ease-out;
+}
+
+nav > a {
+    display: grid;
+    place-items: center;
+    text-decoration: none;
+    font-size: var(--font-size-m);
+}
+
+.desktop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .nav__links {
@@ -67,14 +142,8 @@ nav {
     justify-content: right;
     align-items: center;
 
-    min-height: 10vh;
     gap: 2rem;
-
-    padding-right: 4rem;
-    background: var(--bg-nav);
     list-style: none;
-
-    transition: 0.15s ease-out;
 }
 
 .nav-transparent {
@@ -109,6 +178,19 @@ footer {
     list-style: none;
     padding: 2rem;
     line-height: 2rem;
+}
+
+/* Accessibility */
+.skip {
+    position: absolute;
+    z-index: 999;
+    transform: translateY(-100vh);
+    background-color: white;
+    color: black;
+}
+
+.skip:focus {
+    transform: translateY(0);
 }
 
 @media screen and (max-width: 768px) {
