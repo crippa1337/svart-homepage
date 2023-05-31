@@ -7,6 +7,7 @@
     --font-size-l: clamp(2rem, 10vw, 4rem);
     --font-size-m: 2rem;
     --font-size-s: 1.75rem;
+    --font-size-card: 1.5rem;
 
     --clr-links: rgba(226, 226, 226, 0.842);
     --clr-timeline: white;
@@ -36,21 +37,28 @@ body {
     font-size: var(--font-size-m);
 }
 
+.small-text {
+    font-size: var(--font-size-s);
+}
+
+.card-text {
+    font-size: var(--font-size-card);
+}
+
 .title-text,
 .medium-text,
 .small-text {
     line-height: 3rem;
 }
 
-.small-text {
-    font-size: var(--font-size-s);
+.card-text {
+    line-height: 2.5rem;
 }
 
 /* Nav */
 nav {
     position: sticky;
     top: 0;
-
     z-index: 100;
 }
 

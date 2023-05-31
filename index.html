@@ -19,6 +19,7 @@
     <a href="#main-content" class="skip">Skip to main content</a>
     <nav class="desktop">
         <ul class="nav__links nav-transparent">
+            <li><a href="index.html">Svart</a></li>
             <li><a class="nav-link colored-link" href="download.html">Download</a></li>
             <li><a class="nav-link colored-link" href="history.html">History</a></li>
             <li><a href="https://github.com/crippa1337/svart"><i class="fa fa-github" style="font-size:36px"></i></a></li>
@@ -47,19 +48,29 @@
             <a href="download.html" class="download-redirect">Download Svart 4</a>
         </section>
 
-        <section id="main-content" class="about">
-            <div class=" about__divider">
-                <h2 class="about__title title-text">About</h2>
-                <p class="about__text small-text">
+        <section id="main-content" class="main">
+            <div class="main__card">
+                <h2 class="card__title title-text">About</h2>
+                <p class="card__text card-text">
                     Svart is a chess engine written in Rust. It began as a fun project in February 2023 but quickly grew into a competetive engine.
-                    According to the <a class="colored-link" href="https://ccrl.chessdom.com/ccrl/4040/">CCRL</a>, Svart is one of the top 100 strongest chess engines available with an elo rating above 3000, making it superhuman in strength.
-
                     Svart employs a classical alpha-beta search with a modest implementation of an <a class="colored-link" href="https://en.wikipedia.org/wiki/Efficiently_updatable_neural_network">NNUE</a> for evaluation.
                 </p>
-                <h2 class="about__title title-text">Author(s)</h2>
-                <p class="about__text small-text">
+            </div>
+
+            <div class="main__card">
+                <h2 class="card__title title-text">Author(s)</h2>
+                <p class="card__text card-text">
                     Svart is written by me, <a class="colored-link" href="https://github.com/crippa1337">Cristopher</a>. I'm an 18 year old student from Sweden who enjoys programming and chess. But I did not write it alone, I have had help from many people along the way,
                     especially from the <a class="colored-link" href="https://discord.com/invite/F6W6mMsTGN">Engine Programming</a> discord server. A special thanks to the <a class="colored-link" href="https://github.com/crippa1337/svart/graphs/contributors">contributors</a> of Svart.
+                </p>
+            </div>
+
+            <div class="main__card">
+                <h2 class="card__title title-text">Strength</h2>
+                <p class="card__text card-text">
+                    According to the <a class="colored-link" href="https://ccrl.chessdom.com/ccrl/4040/">CCRL</a>,
+                    Svart is one of the top 100 strongest chess engines available with an elo rating above 3000, making it superhuman in strength.
+                    It has repeatedly placed first in it's division in the CCRL Amateur Series.
                 </p>
             </div>
         </section>

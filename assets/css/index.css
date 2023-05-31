@@ -48,43 +48,55 @@ body {
 }
 
 /* About */
-.about {
-    display: grid;
-    place-items: center;
-    background: var(--bg-main);
-}
-
-.about__divider {
+.main {
     display: flex;
     justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    background: var(--bg-main);
+    gap: 5rem;
+    padding-block: 4rem;
+}
 
-    margin-inline: 2rem;
-    padding: 2rem;
-    max-width: 1024px;
+.main__card {
     background: var(--bg-content);
-    box-shadow: 25px 0 20px -20px rgba(0, 0, 0, 0.45), -25px 0 20px -20px rgba(0, 0, 0, 0.45);
+    width: 25%;
+    border-radius: 1rem;
+    outline: 1px white solid;
 }
 
-.about__title {
-    margin-top: 2rem;
+.card__title {
+    min-height: 6rem;
+    display: grid;
+    place-items: center;
+    border-bottom: 1px solid white;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-.about__text {
+.card__text {
     margin: 2rem;
+}
+
+/* About card */
+.main > .main__card:nth-child(1) > h2 {
+    background-image: url('../images/moon.jpg');
+}
+
+/* Authors card */
+.main > .main__card:nth-child(2) > h2 {
+    background-image: url('../images/saturn.jpg');
+}
+
+/* Strength card */
+.main > .main__card:nth-child(3) > h2 {
+    background-image: url('../images/comet.jpg');
 }
 
 @media screen and (max-width: 768px) {
     .welcome {
         width: 70%;
         text-align: center;
-    }
-
-    .about__divider {
-        margin-inline: 0;
-        padding: 0;
-        box-shadow: none;
     }
 
     .title-text {
