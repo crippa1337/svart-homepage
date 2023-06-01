@@ -11,6 +11,10 @@ main {
     text-align: center;
 }
 
+.download__title {
+    margin-bottom: 6.5rem;
+}
+
 .download {
     min-height: 100vh;
     display: flex;

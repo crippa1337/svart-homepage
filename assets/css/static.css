@@ -126,7 +126,7 @@ body {
 nav {
     position: sticky;
     top: 0;
-    z-index: 100;
+    z-index: 1000000;
 
     min-height: 10vh;
 
