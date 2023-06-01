@@ -37,17 +37,17 @@ body {
 }
 
 /* About card */
-.main > .main__card:nth-child(1) > h2 {
+.main > .main__card:nth-child(1) > h2::before {
     background-image: url('../images/moon.jpg');
 }
 
 /* Authors card */
-.main > .main__card:nth-child(2) > h2 {
+.main > .main__card:nth-child(2) > h2::before {
     background-image: url('../images/saturn.jpg');
 }
 
 /* Strength card */
-.main > .main__card:nth-child(3) > h2 {
+.main > .main__card:nth-child(3) > h2::before {
     background-image: url('../images/comet.jpg');
 }
 

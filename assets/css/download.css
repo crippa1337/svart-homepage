@@ -25,62 +25,50 @@ main {
     box-shadow: 25px 0 20px -20px rgba(0, 0, 0, 0.45), -25px 0 20px -20px rgba(0, 0, 0, 0.45);
 }
 
+.download-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 4rem;
+}
+
+/* V1 */
+.download-cards > .main__card:nth-child(1) > h2::before {
+        background-image: url('../images/black_pawn.jpg');
+    background-position-y: -23rem;
+}
+
+/* V2 */
+.download-cards > .main__card:nth-child(2) > h2::before {
+    background-image: url('../images/black_knight1.jpg');
+    background-position-y: -17rem;
+}
+
+/* V3 */
+.download-cards > .main__card:nth-child(3) > h2::before {
+    background-image: url('../images/black_king.jpg');
+    background-position-y: -1rem;
+}
+
+.card__title {
+    min-height: 10rem;
+}
+
+.card__title::before {
+    min-height: 10rem;
+    filter: blur(2px);
+}
+
+.card__text {
+    min-height: 6rem;
+}
+
 .figures {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 
     gap: 2rem;
-}
-
-figure {
-    display: grid;
-    border-radius: 1rem;
-    overflow: hidden;
-    cursor: pointer;
-
-    height: 35rem;
-}
-
-figure > * {
-    grid-area: 1/1;
-    transition: 0.4s;
-}
-
-figure > figcaption {
-    z-index: 99;
-    font-size: 5rem;
-    transform: translateX(-1000px);
-    text-align: center;
-
-    background: rgba(0, 0, 0, 0.4);
-    padding-top: 5rem;
-}
-
-figure > img {
-    min-height: 100%;
-    width: 20rem;
-
-    object-fit: cover;
-}
-
-figure:hover figcaption {
-    transform: translateX(0);
-}
-
-figure:hover img {
-    transform: scale(1.1);
-    filter: blur(5px);
-}
-
-.versions {
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    text-align: center;
-    gap: 2rem;
-
-    max-width: 1024px;
 }
 
 .medium-text {
@@ -91,28 +79,6 @@ figure:hover img {
     .download {
         margin-inline: 0;
         padding: 1rem;
-    }
-
-    .versions {
-        flex-wrap: wrap;
-    }
-
-    figure {
-        height: 100%;
-    }
-
-    figure > img {
-        max-width: 20rem;
-        width: 100%;
-    }
-
-    figure > figcaption {
-        transform: translateX(0px);
-    }
-
-    figure:hover img {
-        transform: scale(1);
-        filter: blur(0);
     }
 
     .title-text {
