@@ -5,6 +5,7 @@ main {
 
     min-height: 100vh;
     background: var(--bg-main);
+    overflow-x: auto;
 }
 
 .title-text {
@@ -12,7 +13,7 @@ main {
 }
 
 .download__title {
-    margin-bottom: 6.5rem;
+    margin-block: 6rem;
 }
 
 .download {
@@ -20,7 +21,6 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     gap: 2rem;
 
     padding: 2rem;
@@ -31,27 +31,23 @@ main {
 
 .download-cards {
     display: flex;
-    flex-direction: row;
     justify-content: center;
     gap: 4rem;
 }
 
 /* V1 */
 .download-cards > .main__card:nth-child(1) > h2::before {
-        background-image: url('../images/black_pawn.jpg');
-    background-position-y: -23rem;
+    background-image: url('../images/black_pawn.jpg');
 }
 
 /* V2 */
 .download-cards > .main__card:nth-child(2) > h2::before {
     background-image: url('../images/black_knight1.jpg');
-    background-position-y: -17rem;
 }
 
 /* V3 */
 .download-cards > .main__card:nth-child(3) > h2::before {
     background-image: url('../images/black_king.jpg');
-    background-position-y: -1rem;
 }
 
 .card__title {
@@ -71,7 +67,6 @@ main {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-
     gap: 2rem;
 }
 
@@ -79,13 +74,43 @@ main {
     text-align: center;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
     .download {
         margin-inline: 0;
-        padding: 1rem;
+        padding: 0;
     }
 
-    .title-text {
-        margin-top: 2rem;
+    .download-cards {
+        scroll-snap-type: x mandatory;
+        justify-content: start;
+        overflow-x: scroll;
+        scroll-snap-align: center;
+        width: 100vw;
+        scroll-padding-inline: 1rem;
+        gap: 0.9rem;
+    }
+
+    .download-cards > *:first-child {
+        margin-left: 1rem;
+    }
+
+    .download-cards > *:last-child {
+        margin-right: 1rem;
+    }
+
+    .main__card {
+        margin-inline: 0.1rem;
+        margin-block: 2rem;
+        width: 90vw;
+        flex-shrink: 0;
+    }
+
+    .download__title {
+        margin-block: 0;
+        padding-top: 3rem;
+    }
+
+    .release-notice {
+        padding: 1rem;
     }
 }

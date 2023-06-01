@@ -61,6 +61,7 @@ body {
     width: 25%;
     border-radius: 1rem;
     outline: 1px white solid;
+    scroll-snap-align: start;
 }
 
 .card__title::before {
@@ -222,5 +223,14 @@ footer {
 
     .small-text {
         font-size: clamp(1rem, 3vw, 1.5rem);
+    }
+
+    .card-text {
+        font-size: clamp(1.5rem, 3vw, 2rem);
+    }
+
+    .redirect-button {
+        padding: 0.5rem 1rem;
+        font-size: 2rem;
     }
 }

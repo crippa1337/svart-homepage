@@ -13,6 +13,7 @@
         display: block;
         position: sticky;
         top: 0;
+        padding: 0;
         width: 100%;
     }
 
@@ -44,10 +45,11 @@
     .mobile__links a, mobile__links a:visited {
         color: var(--clr-links);
         padding: 0.5rem;
-    }
+    }   
 
-    .mobile__links a:hover {
-        background: var(--clr-rb);
+    .mobile__links a:active {
+        -webkit-tap-highlight-color: transparent;
+        background: var(--clr-links);
     }
 
     .open {
