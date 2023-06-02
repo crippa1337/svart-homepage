@@ -45,12 +45,15 @@
     .mobile__links a, mobile__links a:visited {
         color: var(--clr-links);
         padding: 0.5rem;
+        text-decoration: none;
     }   
 
     .mobile__links a:active {
         /* Disables Chrome's default blue highlight */
         -webkit-tap-highlight-color: transparent;
-        background: var(--clr-links);
+        background: rgb(90, 90, 90);
+        font-size: 1.1rem;
+        transition: 0.2s;
     }
 
     .open {

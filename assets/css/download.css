@@ -74,6 +74,12 @@ main {
     text-align: center;
 }
 
+@media screen and (max-width: 1500px) {
+    .card__text {
+        min-height: 10rem;
+    }
+}
+
 @media (max-width: 1000px) {
     .download {
         margin-inline: 0;
@@ -103,6 +109,7 @@ main {
         margin-block: 2rem;
         width: 90vw;
         flex-shrink: 0;
+        text-align: center;
     }
 
     .download__title {
@@ -112,5 +119,9 @@ main {
 
     .release-notice {
         padding: 1rem;
+    }
+
+    .card__text {
+        font-size: clamp(1.3rem, 4vw, 2rem);
     }
 }
