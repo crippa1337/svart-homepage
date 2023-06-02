@@ -48,6 +48,7 @@
     }   
 
     .mobile__links a:active {
+        /* Disables Chrome's default blue highlight */
         -webkit-tap-highlight-color: transparent;
         background: var(--clr-links);
     }
